@@ -1,6 +1,7 @@
 package com.tt.test.view;
 
 import android.animation.AnimatorSet;
+import android.animation.ObjectAnimator;
 import android.animation.PointFEvaluator;
 import android.animation.ValueAnimator;
 import android.content.Context;

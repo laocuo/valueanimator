@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="40"
+    android:viewportHeight="40">
+    <group
+        android:name="boomgroup"
+        android:rotation="45"
+        android:pivotX="20"
+        android:pivotY="20"
+        android:scaleX="0.7"
+        android:scaleY="0.7">
+        <path
+            android:name="boom"
+            android:fillColor="#ffffff"
+            android:strokeColor="#d21d59"
+            android:strokeWidth="1"
+            android:strokeLineCap="round"
+            android:strokeLineJoin="round"
+            android:pathData="M1,1,L20,10,L39,1,L30,20,L39,39,L20,30,L1,39,L10,20,Z"/>
+    </group>
+
+</vector>

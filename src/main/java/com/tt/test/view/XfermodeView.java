@@ -18,7 +18,7 @@ import com.tt.test.R;
  */
 
 public class XfermodeView extends View {
-    Paint mCpaint, mRpaint;
+    private Paint mCpaint, mRpaint;
     private Canvas mSrcCanvas;
     private Bitmap mSrcBitmap, mDestBitmap;
     private final int mRadius = 100;
