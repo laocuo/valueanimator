@@ -11,20 +11,23 @@ import android.view.Menu;
 import android.widget.ImageView;
 
 import com.tt.test.view.Ball;
+import com.tt.test.view.BottleView;
 
 public class MainActivity extends AppCompatActivity {
     private static final String TAG = "laocuo";
     private Ball mBall;
     private Toolbar mToolbar;
     private ImageView mImageView;
+    private BottleView mBottleView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         initToolbar();
-//        mBall = (Ball) findViewById(R.id.ball);
+        mBall = (Ball) findViewById(R.id.ball);
         mImageView = (ImageView) findViewById(R.id.image);
+        mBottleView = (BottleView) findViewById(R.id.bottle);
     }
 
     private void initToolbar() {
@@ -47,18 +50,19 @@ public class MainActivity extends AppCompatActivity {
     protected void onStart() {
         super.onStart();
 //        mBall.animateStart();
-        Drawable d = mImageView.getDrawable();
-        if (d instanceof Animatable) {
-            ((Animatable) d).start();
-        }
+//        Drawable d = mImageView.getDrawable();
+//        if (d instanceof Animatable) {
+//            ((Animatable) d).start();
+//        }
+        mBottleView.performAnim();
     }
 
     @Override
     protected void onStop() {
         super.onStop();
-        Drawable d = mImageView.getDrawable();
-        if (d instanceof Animatable) {
-            ((Animatable) d).stop();
-        }
+//        Drawable d = mImageView.getDrawable();
+//        if (d instanceof Animatable) {
+//            ((Animatable) d).stop();
+//        }
     }
 }
